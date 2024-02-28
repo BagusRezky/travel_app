@@ -1,3 +1,3 @@
 ### Detail Page
 
-![image](assets/detailpage.jpeg)
+![image](assets/detail.gif)
