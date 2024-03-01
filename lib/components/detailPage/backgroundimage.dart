@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class BackgroundImage extends StatelessWidget {
   const BackgroundImage({
-    super.key,
-  });
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,6 +11,7 @@ class BackgroundImage extends StatelessWidget {
       height: 350,
       width: 335,
       child: Stack(
+        clipBehavior: Clip.none,
         children: [
           // Gambar
           Positioned.fill(
@@ -47,8 +48,8 @@ class BackgroundImage extends StatelessWidget {
           ),
           // Container love
           Positioned(
-            bottom: 10,
-            right: 13,
+            bottom: -15,
+            right: 20,
             child: Container(
               height: 40,
               width: 40,
